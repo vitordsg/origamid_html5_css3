@@ -1,0 +1,10 @@
+div {
+  background: #aaa;
+  width: 140px;
+  height: 80px;
+  padding: 30px;
+}
+
+#adr_distai {
+  display: none;
+}
