@@ -1,7 +1,18 @@
 .grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.titulo {
+  grid-column: 1 / -1;
+}
+
+.info {
+  place-self: start;
+  display: grid;
+  place-items: start;
+  gap: 20px;
 }
 
 /* Estilos Gerais */
