@@ -1,3 +1,12 @@
+.minmax {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 65rem;
+}
+
+.galeria {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -5,18 +14,15 @@ img {
 
 div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin-bottom: 1rem;
   gap: 1rem;
 }
 
 @media (min-width: 400px) {
   .minmax img {
     order: 2;
+    /* grid-row: 2; */
   }
-}
-
-.galeria {
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 p {
